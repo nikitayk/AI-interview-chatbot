@@ -1,0 +1,55 @@
+# Core Web App & Data
+streamlit==1.33.0
+pandas==2.2.2
+numpy==1.26.4
+
+pandas==2.0.3
+
+
+# NLP & Embeddings
+sentence-transformers==2.6.1
+scikit-learn==1.4.2
+nltk==3.8.1
+
+
+# RAG & Vector Store
+langchain==0.1.14
+faiss-cpu==1.7.4
+
+# LLMs & Transformers (choose as needed)
+openai==1.23.6
+transformers==4.40.2
+torch==2.3.0
+huggingface-hub==0.23.0
+streamlit==1.33.0
+pandas==2.0.3
+nltk==3.8.1
+scikit-learn==1.4.2
+sentence-transformers==2.6.1
+plotly==5.18.0
+
+
+# Plotting & Analytics
+plotly==5.21.0
+
+# Utilities
+python-dotenv==1.0.1
+
+# Excel/CSV Support
+openpyxl==3.1.2
+xlrd==2.0.1
+
+# Testing
+pytest==8.2.1
+
+# Optional (for resume parsing, scraping, etc.)
+# pdfplumber==0.11.0
+# beautifulsoup4==4.12.3
+# selenium==4.20.0
+
+# Optional: For Docker deployment
+# docker==7.0.0
+langchain==0.1.14
+faiss-cpu==1.7.4
+sentence-transformers==2.6.1
+openai==1.23.6
