@@ -1,152 +1,157 @@
 [
-  {
+  { "candidate_id": "12345",
+    "timestamp": "2025-05-22T15:10:00Z",
+    "question_type": "Conceptual",
     "question": "What is the difference between precision and recall, and when would you prioritize one over the other?",
-    "model_answer": "Precision is the ratio of true positive predictions to all positive predictions, indicating accuracy of positive predictions. Recall is the ratio of true positives to all actual positives, measuring how many actual positives were captured. You prioritize precision when false positives are costly (e.g., spam detection), and recall when missing positives is critical (e.g., disease diagnosis).",
-    "difficulty": "medium"
+    "answer": "Precision is the ratio of true positive predictions to all positive predictions, indicating accuracy of positive predictions. Recall is the ratio of true positives to all actual positives, measuring how many actual positives were captured. You prioritize precision when false positives are costly (e.g., spam detection), and recall when missing positives is critical (e.g., disease diagnosis).",
+    "difficulty": "medium",
+    "score": 8,
+    "feedback": "Clearly explains the differences and provides relevant examples for prioritization.",
+    "sentiment": "positive",
+    "duration_seconds": 120
   },
   {
+    "candidate_id": "12346",
+    "timestamp": "2025-05-22T15:13:00Z",
+    "question_type": "Conceptual",
     "question": "Explain the concept of gradient descent and why it is important in training machine learning models.",
-    "model_answer": "Gradient descent is an optimization algorithm used to minimize a model’s loss function by iteratively adjusting model parameters in the direction of the steepest descent of the loss. It is important because it helps models learn the best parameters to fit data by reducing errors progressively.",
-    "difficulty": "medium"
+    "answer": "Gradient descent is an optimization algorithm used to minimize a model’s loss function by iteratively adjusting model parameters in the direction of the steepest descent of the loss. It is important because it helps models learn the best parameters to fit data by reducing errors progressively.",
+    "difficulty": "medium",
+    "score": 9,
+    "feedback": "Thorough explanation with emphasis on its importance in training.",
+    "sentiment": "positive",
+    "duration_seconds": 100
   },
   {
+    "candidate_id": "12347",
+    "timestamp": "2025-05-22T15:15:00Z",
+    "question_type": "Technical",
     "question": "What are convolutional neural networks (CNNs) and in what scenarios are they most effective?",
-    "model_answer": "CNNs are specialized neural networks designed to process data with grid-like topology, such as images. They use convolutional layers to automatically and adaptively learn spatial hierarchies of features. CNNs are highly effective in image recognition, video analysis, and other computer vision tasks.",
-    "difficulty": "medium"
+    "answer": "CNNs are specialized neural networks designed to process data with grid-like topology, such as images. They use convolutional layers to automatically and adaptively learn spatial hierarchies of features. CNNs are highly effective in image recognition, video analysis, and other computer vision tasks.",
+    "difficulty": "medium",
+    "score": 9,
+    "feedback": "Detailed and concise explanation with accurate applications.",
+    "sentiment": "positive",
+    "duration_seconds": 110
   },
   {
+    "candidate_id": "12348",
+    "timestamp": "2025-05-22T15:18:00Z",
+    "question_type": "Conceptual",
     "question": "Describe the difference between batch learning and online learning.",
-    "model_answer": "Batch learning trains models on the entire dataset at once and typically requires retraining with new data. Online learning updates the model incrementally as new data arrives, which is useful for real-time or streaming data applications.",
-    "difficulty": "medium"
+    "answer": "Batch learning trains models on the entire dataset at once and typically requires retraining with new data. Online learning updates the model incrementally as new data arrives, which is useful for real-time or streaming data applications.",
+    "difficulty": "medium",
+    "score": 8,
+    "feedback": "Good differentiation with clear use-case examples.",
+    "sentiment": "positive",
+    "duration_seconds": 90
   },
   {
+    "candidate_id": "12349",
+    "timestamp": "2025-05-22T15:20:00Z",
+    "question_type": "Conceptual",
     "question": "How do you interpret the ROC curve and the AUC metric?",
-    "model_answer": "The ROC curve plots the true positive rate against the false positive rate at various classification thresholds. The AUC (Area Under the Curve) quantifies the overall ability of the model to distinguish between classes; an AUC of 1 means perfect classification, 0.5 means random guessing.",
-    "difficulty": "medium"
+    "answer": "The ROC curve plots the true positive rate against the false positive rate at various classification thresholds. The AUC (Area Under the Curve) quantifies the overall ability of the model to distinguish between classes; an AUC of 1 means perfect classification, 0.5 means random guessing.",
+    "difficulty": "medium",
+    "score": 9,
+    "feedback": "Well-explained with appropriate interpretation of AUC values.",
+    "sentiment": "positive",
+    "duration_seconds": 105
   },
   {
+    "candidate_id": "12350",
+    "timestamp": "2025-05-22T15:23:00Z",
+    "question_type": "Technical",
     "question": "Can you explain transfer learning and give an example where it is useful?",
-    "model_answer": "Transfer learning involves taking a pre-trained model on a large dataset and fine-tuning it on a smaller, related dataset. This approach reduces training time and improves performance. For example, using a pre-trained ImageNet model for medical image classification.",
-    "difficulty": "medium"
+    "answer": "Transfer learning involves taking a pre-trained model on a large dataset and fine-tuning it on a smaller, related dataset. This approach reduces training time and improves performance. For example, using a pre-trained ImageNet model for medical image classification.",
+    "difficulty": "medium",
+    "score": 8,
+    "feedback": "Clear explanation of the concept with a practical example.",
+    "sentiment": "positive",
+    "duration_seconds": 95
   },
   {
+    "candidate_id": "12351",
+    "timestamp": "2025-05-22T15:26:00Z",
+    "question_type": "Problem-Solving",
     "question": "What steps would you take to debug a machine learning model that is performing poorly?",
-    "model_answer": "I would first check data quality and preprocessing steps, ensure labels are correct, analyze feature distributions, and check for data leakage. Next, I’d review model architecture and hyperparameters, validate training and test splits, and use techniques like learning curves to diagnose underfitting or overfitting.",
-    "difficulty": "hard"
+    "answer": "I would first check data quality and preprocessing steps, ensure labels are correct, analyze feature distributions, and check for data leakage. Next, I’d review model architecture and hyperparameters, validate training and test splits, and use techniques like learning curves to diagnose underfitting or overfitting.",
+    "difficulty": "hard",
+    "score": 9,
+    "feedback": "Comprehensive debugging approach with logical steps.",
+    "sentiment": "positive",
+    "duration_seconds": 130
   },
   {
+    "candidate_id": "12352",
+    "timestamp": "2025-05-22T15:29:00Z",
+    "question_type": "Conceptual",
     "question": "Explain the role of regularization in machine learning and compare L1 and L2 regularization.",
-    "model_answer": "Regularization adds a penalty to the loss function to prevent overfitting by discouraging overly complex models. L1 regularization (Lasso) can shrink some coefficients to zero, effectively performing feature selection. L2 regularization (Ridge) shrinks coefficients but keeps all features, promoting smaller weights.",
-    "difficulty": "medium"
+    "answer": "Regularization adds a penalty to the loss function to prevent overfitting by discouraging overly complex models. L1 regularization (Lasso) can shrink some coefficients to zero, effectively performing feature selection. L2 regularization (Ridge) shrinks coefficients but keeps all features, promoting smaller weights.",
+    "difficulty": "medium",
+    "score": 8,
+    "feedback": "Effective comparison of L1 and L2 regularization with practical implications.",
+    "sentiment": "positive",
+    "duration_seconds": 100
   },
   {
+    "candidate_id": "12353",
+    "timestamp": "2025-05-22T15:32:00Z",
+    "question_type": "Problem-Solving",
     "question": "How would you approach designing an AI system that needs to explain its decisions to users?",
-    "model_answer": "I would use interpretable models where possible, such as decision trees or linear models. For complex models like neural networks, I’d apply explainability techniques such as SHAP values, LIME, or attention mechanisms to provide insights into decision factors, ensuring transparency and user trust.",
-    "difficulty": "hard"
+    "answer": "I would use interpretable models where possible, such as decision trees or linear models. For complex models like neural networks, I’d apply explainability techniques such as SHAP values, LIME, or attention mechanisms to provide insights into decision factors, ensuring transparency and user trust.",
+    "difficulty": "hard",
+    "score": 9,
+    "feedback": "Excellent integration of interpretability tools and user focus.",
+    "sentiment": "positive",
+    "duration_seconds": 120
   },
   {
+    "candidate_id": "12354",
+    "timestamp": "2025-05-22T15:35:00Z",
+    "question_type": "Technical",
     "question": "What are generative adversarial networks (GANs), and what are their common applications?",
-    "model_answer": "GANs consist of two neural networks—a generator and a discriminator—that compete to improve each other. The generator creates fake data while the discriminator tries to distinguish real from fake. GANs are widely used in image generation, data augmentation, and style transfer.",
-    "difficulty": "hard"
+    "answer": "GANs consist of two neural networks—a generator and a discriminator—that compete to improve each other. The generator creates fake data while the discriminator tries to distinguish real from fake. GANs are widely used in image generation, data augmentation, and style transfer.",
+    "difficulty": "hard",
+    "score": 9,
+    "feedback": "Accurate explanation with relevant examples of applications.",
+    "sentiment": "positive",
+    "duration_seconds": 130
   },
   {
-    "question": "Can you briefly explain what artificial intelligence is and how it differs from machine learning?",
-    "model_answer": "Artificial intelligence (AI) is the broader concept of machines being able to carry out tasks in a way that we would consider 'smart'. Machine learning (ML) is a subset of AI that involves training algorithms on data so they can learn patterns and make decisions with minimal human intervention.",
-    "difficulty": "easy"
-  },
-  {
-    "question": "Describe a machine learning project you have worked on. What was your role and what challenges did you face?",
-    "model_answer": "I worked on a project to build a predictive maintenance system for manufacturing equipment. My role was to design and implement the data preprocessing pipeline and train various models to predict equipment failures. One major challenge was dealing with imbalanced datasets, which I addressed using techniques like SMOTE and adjusting class weights.",
-    "difficulty": "medium"
-  },
-  {
-    "question": "How do you handle missing or corrupted data in a dataset?",
-    "model_answer": "Handling missing data depends on the context and extent. Common strategies include removing records with missing values if the dataset is large enough, imputing missing values using mean/median/mode or more advanced techniques like KNN imputation, and analyzing why data is missing to avoid bias. For corrupted data, validation rules and anomaly detection can help identify and correct or remove bad data.",
-    "difficulty": "medium"
-  },
-  {
-    "question": "Explain the bias-variance tradeoff in machine learning.",
-    "model_answer": "The bias-variance tradeoff is the balance between a model’s ability to generalize to new data and its ability to fit the training data. High bias models are too simple and underfit, missing important patterns. High variance models overfit training data and perform poorly on unseen data. The goal is to find the right balance for optimal performance.",
-    "difficulty": "medium"
-  },
-  {
-    "question": "What are some common activation functions used in neural networks and why are they important?",
-    "model_answer": "Common activation functions include ReLU, sigmoid, and tanh. They introduce non-linearity into the network, allowing it to learn complex patterns. ReLU is widely used because it helps mitigate the vanishing gradient problem and is computationally efficient. Sigmoid and tanh are used in specific layers but can suffer from saturation issues.",
-    "difficulty": "medium"
-  },
-  {
-    "question": "How would you approach selecting features for a machine learning model?",
-    "model_answer": "I start with domain knowledge to identify potentially relevant features, then use exploratory data analysis to check distributions and relationships. Feature selection techniques such as correlation analysis, mutual information, recursive feature elimination, or L1 regularization can help reduce dimensionality and improve model performance.",
-    "difficulty": "medium"
-  },
-  {
-    "question": "Can you explain the difference between supervised, unsupervised, and reinforcement learning with examples?",
-    "model_answer": "Supervised learning uses labeled data to train models to predict outcomes, e.g., image classification. Unsupervised learning works on unlabeled data to find hidden patterns, like clustering customers by behavior. Reinforcement learning involves an agent learning to make decisions through rewards and penalties, such as a robot learning to navigate a maze.",
-    "difficulty": "easy"
-  },
-  {
-    "question": "What are some challenges of deploying machine learning models in production?",
-    "model_answer": "Challenges include model monitoring to detect drift, ensuring scalability and latency requirements, managing model versioning, handling data pipeline consistency, and addressing security concerns. It is also important to build robust systems for retraining models as new data arrives.",
-    "difficulty": "hard"
-  },
-  {
-    "question": "Describe the concept of overfitting and some techniques to prevent it.",
-    "model_answer": "Overfitting occurs when a model learns noise and details in training data too well, reducing its ability to generalize. Techniques to prevent overfitting include cross-validation, regularization (L1/L2), dropout in neural networks, pruning, early stopping, and using more training data.",
-    "difficulty": "medium"
-  },
-  {
-    "question": "How do you stay current with the rapidly evolving field of AI?",
-    "model_answer": "I regularly read research papers on arXiv, follow AI conferences like NeurIPS and ICML, participate in online courses, contribute to open source projects, and engage with the AI community through forums and meetups. Continuous learning is essential in this fast-paced field.",
-    "difficulty": "easy"
-  },
-  {
-    "question": "What is the difference between a parametric and a non-parametric model in machine learning?",
-    "model_answer": "Parametric models summarize data with a fixed number of parameters (e.g., linear regression), making them faster but less flexible. Non-parametric models (e.g., decision trees, k-NN) do not assume a fixed form and can adapt to data complexity but may require more data and computation.",
-    "difficulty": "medium"
-  },
-  {
-    "question": "How do you handle imbalanced datasets in classification problems?",
-    "model_answer": "Handling imbalanced datasets can involve techniques such as resampling (oversampling minority or undersampling majority), generating synthetic samples using SMOTE, using appropriate evaluation metrics like F1-score or AUC instead of accuracy, and applying cost-sensitive learning to penalize misclassification of minority classes more.",
-    "difficulty": "medium"
-  },
-  {
-    "question": "What is cross-validation, and why is it important?",
-    "model_answer": "Cross-validation is a technique to assess how well a model generalizes to unseen data by dividing data into multiple folds, training on some folds, and validating on the others. It helps prevent overfitting and provides a more reliable estimate of model performance.",
-    "difficulty": "easy"
-  },
-  {
-    "question": "Explain the concept of embedding layers in deep learning.",
-    "model_answer": "Embedding layers map high-dimensional categorical data, like words, into dense, low-dimensional continuous vectors that capture semantic meaning. They are essential in natural language processing for converting words into numerical representations suitable for neural networks.",
-    "difficulty": "medium"
-  },
-  {
-    "question": "What is the vanishing gradient problem, and how can it be mitigated?",
-    "model_answer": "The vanishing gradient problem occurs when gradients become very small during backpropagation in deep networks, making training slow or impossible for early layers. It can be mitigated using activation functions like ReLU, proper initialization, batch normalization, and architectures like LSTM for RNNs.",
-    "difficulty": "hard"
-  },
-  {
-    "question": "Describe the difference between bagging and boosting.",
-    "model_answer": "Bagging (Bootstrap Aggregating) trains multiple independent models on different subsets of data and averages their predictions to reduce variance, e.g., Random Forest. Boosting trains models sequentially, where each model focuses on correcting errors of the previous one, reducing bias, e.g., AdaBoost or Gradient Boosting.",
-    "difficulty": "medium"
-  },
-  {
-    "question": "What considerations do you keep in mind when selecting a model evaluation metric?",
-    "model_answer": "I consider the problem type (classification or regression), class imbalance, cost of false positives vs false negatives, and business objectives. For example, accuracy may be misleading with imbalanced classes, so metrics like precision, recall, F1-score, or ROC-AUC might be better suited.",
-    "difficulty": "medium"
-  },
-  {
+    "candidate_id": "12355",
+    "timestamp": "2025-05-22T15:30:00Z",
+    "question_type": "medium",
     "question": "How do recurrent neural networks (RNNs) differ from feedforward neural networks?",
-    "model_answer": "RNNs have connections that form cycles, allowing them to maintain state information and process sequential data, making them suitable for tasks like language modeling or time series prediction. Feedforward networks have a unidirectional flow without memory of previous inputs.",
-    "difficulty": "medium"
+    "answer": "Recurrent Neural Networks (RNNs) are designed to handle sequences by maintaining a form of memory through feedback loops, where the output of one step is fed back as input for the next. This cyclical connection allows RNNs to capture dependencies over time, making them ideal for tasks like speech recognition or time-series forecasting. On the other hand, feedforward neural networks process inputs in a single pass from input to output without retaining information about previous inputs, so they lack the capability to model temporal or sequential data.",
+    "difficulty": "hard",
+    "score": 4,
+    "feedback": "Good explanation of RNNs and feedforward differences, could add examples.",
+    "sentiment": "positive",
+    "duration_seconds": 120
   },
   {
+    "candidate_id": "12356",
+    "timestamp": "2025-05-22T15:35:00Z",
+    "question_type": "medium",
     "question": "Explain the concept of hyperparameter tuning and common methods to perform it.",
-    "model_answer": "Hyperparameter tuning involves searching for the best model configuration (like learning rate, number of layers) that optimizes performance. Common methods include grid search, random search, and more advanced techniques like Bayesian optimization or genetic algorithms.",
-    "difficulty": "medium"
+    "answer": "Hyperparameter tuning is the process of systematically searching for the most effective set of hyperparameters — such as learning rate, batch size, or number of layers — that improve a model’s predictive performance. Since these parameters are not learned during training, they must be selected beforehand. Common strategies include grid search, which tries all combinations in a specified set; random search, which samples parameter values randomly; and more sophisticated methods like Bayesian optimization, which uses past evaluations to inform the next choice, or genetic algorithms that simulate evolution to find optimal parameters.",
+    "difficulty": "hard",
+    "score": 5,
+    "feedback": "Clear and concise explanation of hyperparameter tuning and methods.",
+    "sentiment": "positive",
+    "duration_seconds": 150
   },
   {
+    "candidate_id": "12357",
+    "timestamp": "2025-05-22T15:40:00Z",
+    "question_type": "hard",
     "question": "What ethical considerations should AI engineers keep in mind while developing AI systems?",
-    "model_answer": "AI engineers should consider fairness, transparency, privacy, accountability, and avoiding bias. Ensuring AI systems do not reinforce discrimination, protecting user data, making decisions explainable, and being responsible for system impacts on society are crucial ethical practices.",
-    "difficulty": "hard"
+    "answer": "AI engineers must prioritize creating systems that are fair, transparent, and respect user privacy. This includes avoiding biases that could lead to unfair treatment of individuals or groups and ensuring that AI decisions can be explained and understood by humans. Accountability is critical—engineers should anticipate the potential social impacts of their AI and establish mechanisms for oversight and correction. Additionally, protecting sensitive data and maintaining user trust are essential to ethical AI development.",
+    "difficulty": "hard",
+    "score": 5,
+    "feedback": "Excellent coverage of ethical considerations in AI development.",
+    "sentiment": "positive",
+    "duration_seconds": 180
   }
 ]
