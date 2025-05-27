@@ -4,6 +4,10 @@ services:
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn src.main:app --host 0.0.0.0 --port $PORT
+    plan: standard
+    scaling:
+      minInstances: 1
+      maxInstances: 3
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.0
@@ -15,15 +19,18 @@ services:
         value: "*"
       - key: SECRET_KEY
         generateValue: true
+      - key: PYTORCH_ENABLE_MPS_FALLBACK
+        value: "1"
 
 databases:
   - name: ivy-db
     databaseName: ivy_prod
     user: ivy_user
-    plan: free
+    plan: standard
 
 services:
   - type: redis
     name: ivy-cache
     ipAllowList: []
-    plan: free 
+    plan: standard
+    maxmemoryPolicy: noeviction 

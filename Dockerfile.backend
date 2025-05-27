@@ -6,11 +6,21 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y \
     build-essential \
     libpq-dev \
+    cmake \
+    libopenblas-dev \
+    liblapack-dev \
+    libx11-dev \
+    libgtk-3-dev \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Python dependencies
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
+
+# Create models directory and download face landmark predictor
+RUN mkdir -p models && \
+    wget http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2 -P models/ && \
+    bzip2 -d models/shape_predictor_68_face_landmarks.dat.bz2
 
 # Copy application code
 COPY . .
