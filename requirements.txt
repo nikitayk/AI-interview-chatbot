@@ -5,7 +5,7 @@ python-multipart==0.0.6
 python-jose[cryptography]==3.3.0
 passlib[bcrypt]==1.7.4
 sqlalchemy==2.0.17
-psycopg2-binary==2.9.6
+psycopg2-binary==2.9.9
 pydantic==1.10.13
 
 # Authentication & Authorization
@@ -38,10 +38,10 @@ matplotlib==3.7.1
 kaleido==0.2.1
 
 # Media Processing
-opencv-python==4.8.0
+opencv-python==4.8.0.74
 librosa==0.10.0
 soundfile==0.12.1
-mediapipe==0.10.0
+mediapipe==0.10.21
 
 # Machine Learning
 tensorflow==2.13.0
